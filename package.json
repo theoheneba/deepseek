@@ -1,0 +1,49 @@
+{
+  "name": "deepseek-vscode",
+  "displayName": "DeepSeek for VS Code",
+  "description": "Access DeepSeek AI directly in VS Code for code completion, chat, and AI-powered assistance.",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Programming Languages", "Snippets", "Other"],
+  "activationEvents": [
+    "onCommand:deepseek.setApiKey",
+    "onCommand:deepseek.suggestCode"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "deepseek.setApiKey",
+        "title": "DeepSeek: Set API Key"
+      },
+      {
+        "command": "deepseek.suggestCode",
+        "title": "DeepSeek: Suggest Code"
+      }
+    ],
+    "configuration": {
+      "title": "DeepSeek",
+      "properties": {
+        "deepseek.apiKey": {
+          "type": "string",
+          "description": "Your DeepSeek API key"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.2.2"
+  }
+}
