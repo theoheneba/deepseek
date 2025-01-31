@@ -1,4 +1,4 @@
-# DeepSeek for VS Code
+# DeepSeek AI for VS Code
 
 Access DeepSeek AI directly in VS Code for code completion, chat, and AI-powered assistance.
 
