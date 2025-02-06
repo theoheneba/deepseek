@@ -2,7 +2,7 @@
 
 Access DeepSeek AI directly in VS Code for code completion, chat, and AI-powered assistance.
 
-## Features
+## Features.
 
 - **Code Suggestions**: Get AI-powered code completions.
 - **Secure API Key Storage**: Store your DeepSeek API key securely.
